@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bank Accounts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <h1>Create a New Account</h1>
+    <form id="account-form">
+      <div>
+        <label for="account-type">Account Type:</label>
+        <select id="account-type">
+          <option value="savings">Savings Account</option>
+          <option value="checking">Checking Account</option>
+        </select>
+      </div>
+      <div>
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="account-number" required>
+      </div>
+      <div>
+        <label for="account-holder">Account Holder:</label>
+        <input type="text" id="account-holder" required>
+      </div>
+      <div>
+        <label for="account-balance">Initial Balance:</label>
+        <input type="number" id="account-balance" required>
+      </div>
+      <div id="savings-interest-rate-container">
+        <label for="savings-interest-rate">Interest Rate:</label>
+        <input type="number" id="savings-interest-rate">
+      </div>
+      <div id="checking-overdraft-limit-container">
+        <label for="checking-overdraft-limit">Overdraft Limit:</label>
+        <input type="number" id="checking-overdraft-limit">
+      </div>
+      <div>
+        <button type="submit">Create Account</button>
+      </div>
+    </form>
+  </section>
+
+  <section>
+    <h1>Account List</h1>
+    <div id="account-list"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
